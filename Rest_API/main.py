@@ -72,7 +72,7 @@ analisas_schema = AnalisaSchema(many=True)
  
 """ Endpoint User"""
 #adding a user
-@app.route('/user', methods = ['POST'])
+@app.route('/users', methods = ['POST'])
 def add_user():
     name = request.json['name']
     age = request.json['age']
@@ -87,7 +87,7 @@ def add_user():
 
 
 #getting users
-@app.route('/user/get', methods = ['GET'])
+@app.route('/users', methods = ['GET'])
 def get_user():
     all_users = User.query.all()
     result = users_schema.dump(all_users)
@@ -96,13 +96,13 @@ def get_user():
 
 
 #getting particular user
-@app.route('/user/<id>/', methods = ['GET'])
+@app.route('/users/<id>', methods = ['GET'])
 def user_details(id):
     user = User.query.get(id)
     return user_schema.jsonify(user)
 
 #updating user
-@app.route('/user_update/<id>', methods = ['PUT'])
+@app.route('/users/<id>', methods = ['PUT'])
 def user_update(id):
     data = request.get_json()
     user = User.query.get(id)
@@ -118,7 +118,7 @@ def user_update(id):
 
 
 #deleting user
-@app.route('/user_delete/<id>/', methods = ['DELETE'])
+@app.route('/users/<id>', methods = ['DELETE'])
 def user_delete(id):
     user = User.query.get(id)
     db.session.delete(user)
@@ -146,7 +146,7 @@ def add_analisa():
     return analisa_schema.jsonify(my_analisa)
 
 #getting analisa
-@app.route('/analisa/get', methods = ['GET'])
+@app.route('/analisa', methods = ['GET'])
 def get_anlisa():
     all_analisa = Analisa.query.all()
     result = analisas_schema.dump(all_analisa)
@@ -160,7 +160,7 @@ def analisa_details(id):
     return analisa_schema.jsonify(analisa)
 
 #deleting analisis
-@app.route('/anlisa_delete/<id>', methods = ['DELETE'])
+@app.route('/analisa/<id>', methods = ['DELETE'])
 def analisa_delete(id):
     analisa = Analisa.query.get(id)
     db.session.delete(analisa)
