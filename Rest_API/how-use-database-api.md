@@ -2,6 +2,8 @@
 
 This API allow to get user infromation
 
+Base URL = `not ready yet`
+
 ## Endpoint
 
 ---
