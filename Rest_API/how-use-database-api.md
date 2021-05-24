@@ -2,7 +2,7 @@
 
 This API allow to get user infromation
 
-Base URL = `not ready yet`
+Base URL = https://premium-highway-312515.et.r.appspot.com
 
 ## Endpoint
 
