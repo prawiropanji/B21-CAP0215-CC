@@ -1,0 +1,16 @@
+[Unit]
+Description=Service that keeps running the predicition-api server from startup
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/c0070657/api/app.py
+WorkingDirectory=/home/c0070657/api/
+User=c0070657
+Restart=always
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=%n
