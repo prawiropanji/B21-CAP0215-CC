@@ -1,0 +1,12 @@
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/c0070657/tensorflow_serve/run.sh
+WorkingDirectory=/home/c0070657/tensorflow_serve
+User=c0070657
+Restart=always
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=%n
