@@ -4,5 +4,5 @@
 
 nohup tensorflow_model_server \
 --rest_api_port=8501 \
---model_name=skindec \
---model_base_path=/home/c0070657/tensorflow_serve/saved_model > server.log 2>&1
+--model_name=<name-your-model-here> \
+--model_base_path= <your-path-to-savedmodel> > server.log 2>&1
