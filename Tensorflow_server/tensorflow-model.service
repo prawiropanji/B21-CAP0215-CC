@@ -1,3 +1,7 @@
+[Unit]
+Description=Service that keeps running the tensorflow-model server from startup
+
+[Install]
 WantedBy=multi-user.target
 
 [Service]
