@@ -1,10 +1,14 @@
+[Unit]
+Description=Service that keeps running the tensorflow-model server from startup
+
+[Install]
 WantedBy=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/home/c0070657/tensorflow_serve/run.sh
-WorkingDirectory=/home/c0070657/tensorflow_serve
-User=c0070657
+ExecStart=<your-path-directory>/serve_model.sh
+WorkingDirectory=<your-path-directory>
+User=<your-username>
 Restart=always
 RestartSec=5
 StandardOutput=syslog
