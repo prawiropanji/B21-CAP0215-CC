@@ -8,7 +8,7 @@ from flask_marshmallow import Marshmallow
 app = Flask(__name__)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://panji:password@34.101.250.177:3306/gwp21'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://USER:PASSWORD@SERVER:PORT/DATABASES'
  
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
