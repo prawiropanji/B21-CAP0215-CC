@@ -24,9 +24,7 @@
 
 ## Introduction
 
-At Capstone Project Bangkit 2021, we come up with an idea to create a healthcare themed project. we name our application `SkinDec`. This application was developed to help people identify their facial skintype using their smartphone camera, to provide more information how to properly take care of their skin. three different learning path team developed and contributed to working on this project, B21-CAP0215-MD (Mobile Development), B21-CAP0215-ML (Machine Learning), and B21-CAP0215-CC (Cloud Computing)
-
-
+At Capstone Project Bangkit 2021, we come up with an idea to create a healthcare themed project. we name our application `SkinDec`. This application was developed to help people identify their facial skintype using their smartphone camera, to provide more information how to properly take care of their skin. three different learning path team developed and contributed to working on this project, [B21-CAP0215-MD](https://github.com/wahyurama-creator/B21-CAP0215-MD) (Mobile Development), [B21-CAP0215-ML](https://github.com/diapica/B21-CAP0215-ML) (Machine Learning), and [B21-CAP0215-CC](#B21-CAP0215-CC) (Cloud Computing)
 
 ## Technology
 
